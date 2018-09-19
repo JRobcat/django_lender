@@ -12,9 +12,7 @@ class Lender(models.Model):
     status = models.CharField(choices=STATES, default='incomplete', max_length=48)
 
     def __str__(self):
-        return f'Lender: {self.title} (
-            {self.status})'
+        return f'Lender: {self.title} ({self.status})'
     
     def __repr__(self):
-        return f'Lender: {self.title} (
-            {self.status})'
+        return f'Lender: {self.title} ({self.status})'
